@@ -1,2 +1,2 @@
 # -images
-Images selling website
+mama thama hodatama karanna yanne
