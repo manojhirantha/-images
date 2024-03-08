@@ -6,13 +6,11 @@
     <title>Bootstrap Website</title>
     <!-- Link Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- Font Awesome CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <!-- Custom CSS -->
     <style>
         /* Top bar styles */
         .top-bar {
-            background-color: #6f42c1; /* Matching color */
+            background-color: #000;
             color: #fff;
             padding: 10px 0;
         }
@@ -22,22 +20,37 @@
         .top-bar .contact-info i {
             margin-right: 5px;
         }
-        /* Main navigation styles */
-        .main-nav {
-            background-color: #6f42c1; /* Matching color */
+        /* Main content styles */
+        .main-content {
+            background: linear-gradient(to bottom, #6f42c1, #007bff);
+            color: #fff;
+            padding: 50px 0;
+            text-align: center;
         }
-        .main-nav ul.navbar-nav li.nav-item {
-            margin-right: 20px;
+        .main-content h1 {
+            font-size: 36px;
+            font-weight: bold;
+        }
+        .main-content p {
+            font-size: 18px;
         }
         /* Footer styles */
         .footer {
-            background-color: #6f42c1; /* Matching color */
+            background: linear-gradient(to bottom, #6f42c1, #007bff); /* Same gradient as main content */
             color: #fff;
-            padding: 10px 0;
+            padding: 50px 0;
             text-align: center;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+        }
+        .footer ul {
+            list-style: none;
+            padding: 0;
+        }
+        .footer ul li {
+            margin-bottom: 10px;
+        }
+        .footer ul li a {
+            color: #fff;
+            text-decoration: none;
         }
     </style>
 </head>
@@ -52,16 +65,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 text-right">
-                    <!-- Main navigation -->
-                    <nav class="navbar main-nav">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item"><a class="nav-link" href="#">Docs</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Examples</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Icons</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Themes</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
-                        </ul>
-                    </nav>
+                    <!-- Add social media icons here if needed -->
                 </div>
             </div>
         </div>
@@ -81,9 +85,24 @@
     <div class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    <p>This is a functional text to fill the background.</p>
+                <div class="col-md-3">
+                    <h5>Links</h5>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Docs</a></li>
+                        <li><a href="#">Examples</a></li>
+                        <!-- Add more links as needed -->
+                    </ul>
                 </div>
+                <div class="col-md-3">
+                    <h5>Guides</h5>
+                    <ul>
+                        <li><a href="#">Getting started</a></li>
+                        <li><a href="#">Starter template</a></li>
+                        <!-- Add more guides as needed -->
+                    </ul>
+                </div>
+                <!-- Add more columns as needed -->
             </div>
         </div>
     </div>
