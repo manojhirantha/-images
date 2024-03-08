@@ -3,149 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website</title>
+    <title>Bootstrap Website</title>
     <!-- Link Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <!-- Link Font Awesome CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- Custom CSS -->
     <style>
-        body {
-            background: linear-gradient(90deg, #5F5D9C, #6196A6, #A4CE95, #F4EDCC); /* Color ramp background */
-            color: #A4CE95; /* Text color */
-        }
         /* Top bar styles */
         .top-bar {
-            background-color: #000; /* Black background */
-            color: #fff; /* White text */
+            background-color: #000;
+            color: #fff;
             padding: 10px 0;
         }
         .top-bar .contact-info {
             font-size: 14px;
-            text-align: left; /* Align mobile number to the left */
         }
         .top-bar .contact-info i {
             margin-right: 5px;
         }
-        /* Main navigation styles */
-        .main-nav {
-            background-color: #F4EDCC; /* Light yellow background */
-        }
-        .main-nav ul.navbar-nav li.nav-item {
-            margin-right: 20px;
-        }
-        /* Footer styles */
-        footer {
-            background-color: #000; /* Black background */
-            padding: 5px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            color: #fff; /* White text */
-        }
-        footer .footer-logo {
-            max-width: 100px; /* Adjust as needed */
-        }
-        footer .social-icons {
-            text-align: right; /* Align social icons to the right */
-        }
-        footer .social-icons a {
-            color: #fff; /* White color for social icons */
-            font-size: 20px;
-            margin-right: 10px;
-            transition: transform 0.2s; /* Smooth transition */
-        }
-        footer .social-icons a:hover {
-            transform: scale(1.1); /* Enlarge on hover */
-        }
-        footer .email-signup {
-            text-align: center; /* Center align email sign-up form */
-            margin-top: 10px; /* Add some margin */
-        }
-        footer .email-signup input[type="email"] {
-            width: 200px;
-            padding: 8px;
-            margin-right: 10px;
-        }
-        footer .email-signup button {
-            padding: 8px 20px;
-            background-color: #000; /* Black button background */
-            color: #fff; /* White text */
-            border: none;
-            cursor: pointer;
-        }
-        footer ul {
-            list-style: none;
-            padding-left: 0;
-            margin-bottom: 0;
-        }
-        footer ul li {
-            display: inline-block;
-            margin-right: 20px;
-        }
-        /* Masonry grid styles */
-        .masonry-grid {
-            column-count: 3; /* Number of columns */
-            column-gap: 20px; /* Gap between columns */
-            margin: 20px 0; /* Margin */
-        }
-        .masonry-grid-item {
-            display: inline-block;
-            width: 100%; /* Full width */
-            margin-bottom: 20px; /* Bottom margin */
-            background-color: #F4EDCC; /* Light yellow background */
-            border-radius: 8px; /* Rounded corners */
-            overflow: hidden; /* Hide overflow */
-        }
-        .masonry-grid-item img {
-            width: 100%;
-            height: auto;
-            display: block;
-            border-radius: 8px; /* Rounded corners */
-        }
-        /* Sidebar styles */
-        .sidebar {
-            background-color: #6196A6; /* Light blue background */
-            color: #fff; /* White text */
-            padding: 20px;
-            border-radius: 8px; /* Rounded corners */
-        }
-        .sidebar h3 {
-            margin-bottom: 20px; /* Bottom margin */
-        }
-        .sidebar ul {
-            list-style: none;
-            padding-left: 0;
-        }
-        .sidebar ul li {
-            margin-bottom: 10px; /* Bottom margin */
-        }
-        /* Video styles */
-        .video-container {
-            position: relative;
-            width: 100%;
-            padding-bottom: 56.25%; /* 16:9 aspect ratio */
-            overflow: hidden;
-            margin-top: 20px;
-            cursor: pointer;
-        }
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-        .video-fullscreen-button {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            background-color: #000;
+        /* Main content styles */
+        .main-content {
+            background: linear-gradient(to bottom, #6f42c1, #007bff);
             color: #fff;
-            border: none;
-            padding: 5px 10px;
-            cursor: pointer;
-            z-index: 999;
+            padding: 50px 0;
+            text-align: center;
+        }
+        .main-content h1 {
+            font-size: 36px;
+            font-weight: bold;
+        }
+        .main-content p {
+            font-size: 18px;
+        }
+        /* Buttons */
+        .btn-primary {
+            background-color: #ffc107;
+            border-color: #ffc107;
         }
     </style>
 </head>
@@ -157,139 +49,28 @@
                 <div class="col-md-6">
                     <div class="contact-info">
                         <i class="fas fa-phone"></i> (+94716422536)
-                        <i class="fas fa-map-marker-alt"></i> 123 Main St, City
                     </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="text-right">
-                        <!-- Add social media icons here if needed -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Main navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light main-nav">
-        <div class="container">
-            <a class="navbar-brand" href="#">Your Logo</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Careers</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Image Gallery -->
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3">
-                <!-- Sidebar -->
-                <div class="sidebar">
-                    <h3>Image Categories</h3>
-                    <ul>
-                        <li>Category 1</li>
-                        <li>Category 2</li>
-                        <li>Category 3</li>
-                        <!-- Add more categories as needed -->
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <!-- Image Masonry Grid -->
-                <div class="masonry-grid">
-                    <div class="masonry-grid-item">
-                        <img src="sample_image1.jpg" alt="Sample Image 1">
-                    </div>
-                    <div class="masonry-grid-item">
-                        <img src="sample_image2.jpg" alt="Sample Image 2">
-                    </div>
-                    <div class="masonry-grid-item">
-                        <img src="sample_image3.jpg" alt="Sample Image 3">
-                    </div>
-                    <!-- Add more images as needed -->
-                </div>
-            </div>
-            <div class="col-md-3">
-                <!-- Video Container -->
-                <div class="video-container">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/hnd8yA4cXnc" frameborder="0" allowfullscreen></iframe>
-                    <button class="video-fullscreen-button">Fullscreen</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <form class="email-signup">
-                        <input type="email" placeholder="Your Email">
-                        <button type="submit">Sign Up</button>
-                    </form>
                 </div>
                 <div class="col-md-6 text-right">
-                    <ul>
-                        <li><a href="#">Copyright Notice</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Sitemap</a></li>
-                    </ul>
+                    <!-- Add social media icons here if needed -->
                 </div>
             </div>
         </div>
+    </div>
+
+    <!-- Main content -->
+    <div class="main-content">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <!-- Social media icons -->
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-pinterest"></i></a>
-                        <a href="#"><i class="fab fa-tiktok"></i></a>
-                    </div>
-                </div>
-            </div>
+            <h1>Build fast, responsive sites with Bootstrap</h1>
+            <p>Powerful, extensible, and feature-packed frontend toolkit. Customize with Sass, utilize prebuilt grid system components, and bring projects to life with powerful JavaScript plugins.</p>
+            <a href="#" class="btn btn-primary">Download</a>
+            <a href="#" class="btn btn-light">Read the docs</a>
         </div>
-    </footer>
+    </div>
 
     <!-- Link Bootstrap JS (at the end of the body) -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <script>
-        // Fullscreen button functionality
-        document.querySelector('.video-fullscreen-button').addEventListener('click', function() {
-            var iframe = document.querySelector('.video-container iframe');
-            if (iframe.requestFullscreen) {
-                iframe.requestFullscreen();
-            } else if (iframe.mozRequestFullScreen) { /* Firefox */
-                iframe.mozRequestFullScreen();
-            } else if (iframe.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
-                iframe.webkitRequestFullscreen();
-            } else if (iframe.msRequestFullscreen) { /* IE/Edge */
-                iframe.msRequestFullscreen();
-            }
-        });
-        // Exit fullscreen button functionality
-        document.addEventListener('fullscreenchange', exitFullscreenHandler);
-        document.addEventListener('webkitfullscreenchange', exitFullscreenHandler);
-        document.addEventListener('mozfullscreenchange', exitFullscreenHandler);
-        document.addEventListener('MSFullscreenChange', exitFullscreenHandler);
-        function exitFullscreenHandler() {
-            if (!document.fullscreenElement && !document.webkitIsFullScreen && !document.mozFullScreen && !document.msFullscreenElement) {
-                document.exitFullscreen();
-            }
-        }
-    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
