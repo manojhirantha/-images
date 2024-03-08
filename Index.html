@@ -82,11 +82,25 @@
         .footer ul li a:hover {
             color: #ffc107; /* Yellow color on hover */
         }
+        /* Top bar social icons */
+        .top-bar .social-icons {
+            display: flex;
+            flex-direction: column;
+        }
+        .top-bar .social-icons a {
+            color: #fff;
+            text-decoration: none;
+            margin-bottom: 5px;
+        }
+        .top-bar .social-icons a:hover {
+            color: #ffc107; /* Yellow color on hover */
+        }
     </style>
 </head>
-<body>
+<body style="background-color: #6f42c1;"> <!-- Matching body color with header -->
+
     <!-- Top bar -->
-    <div class="common-bar">
+    <div class="common-bar top-bar">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
