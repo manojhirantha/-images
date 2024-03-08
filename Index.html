@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-    <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Bootstrap Website</title>
-            <!-- Link Bootstrap CSS -->
-            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-            <!-- Custom CSS -->
-            <style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Website</title>
+    <!-- Link Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <style>
         /* Top bar styles */
         .top-bar {
             background-color: #000;
@@ -35,10 +34,23 @@
         .main-content p {
             font-size: 18px;
         }
-        /* Buttons */
-        .btn-primary {
-            background-color: #ffc107;
-            border-color: #ffc107;
+        /* Footer styles */
+        .footer {
+            background: linear-gradient(to bottom, #6f42c1, #007bff); /* Same gradient as main content */
+            color: #fff;
+            padding: 50px 0;
+            text-align: center;
+        }
+        .footer ul {
+            list-style: none;
+            padding: 0;
+        }
+        .footer ul li {
+            margin-bottom: 10px;
+        }
+        .footer ul li a {
+            color: #fff;
+            text-decoration: none;
         }
     </style>
 </head>
@@ -68,6 +80,8 @@
             <a href="#" class="btn btn-light">Read the docs</a>
         </div>
     </div>
+
+    <!-- Footer -->
     <div class="footer">
         <div class="container">
             <div class="row">
@@ -97,7 +111,5 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <!-- Link Bootstrap JS (at the end of the body) -->
-  
 </body>
 </html>
