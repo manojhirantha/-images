@@ -37,7 +37,7 @@
         /* Footer styles */
         footer {
             background-color: #000; /* Black background */
-            padding: 10px 0;
+            padding: 5px 0;
             position: fixed;
             bottom: 0;
             width: 100%;
@@ -70,6 +70,7 @@
         footer ul {
             list-style: none;
             padding-left: 0;
+            margin-bottom: 0;
         }
         footer ul li {
             display: inline-block;
@@ -151,22 +152,23 @@
         </div>
     </nav>
 
-    <!-- Sidebar -->
+    <!-- Image Gallery -->
     <div class="container">
         <div class="row">
             <div class="col-md-3">
+                <!-- Sidebar -->
                 <div class="sidebar">
                     <h3>Image Categories</h3>
                     <ul>
                         <li>Category 1</li>
                         <li>Category 2</li>
                         <li>Category 3</li>
-                        <li>Category 4</li>
+                        <!-- Add more categories as needed -->
                     </ul>
                 </div>
             </div>
             <div class="col-md-9">
-                <!-- Image Gallery -->
+                <!-- Image Masonry Grid -->
                 <div class="masonry-grid">
                     <div class="masonry-grid-item">
                         <img src="sample_image1.jpg" alt="Sample Image 1">
@@ -187,29 +189,18 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
-                    <img src="sample_logo.png" alt="Logo" class="footer-logo">
-                    <div class="social-icons">
-                        <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
-                        <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.pinterest.com"><i class="fab fa-pinterest"></i></a>
-                        <a href="https://www.tiktok.com"><i class="fab fa-tiktok"></i></a>
-                    </div>
+                <div class="col-md-6">
+                    <form class="email-signup">
+                        <input type="email" placeholder="Your Email">
+                        <button type="submit">Sign Up</button>
+                    </form>
                 </div>
-                <div class="col-md-8 text-right">
+                <div class="col-md-6 text-right">
                     <ul>
                         <li><a href="#">Copyright Notice</a></li>
                         <li><a href="#">Privacy Policy</a></li>
                         <li><a href="#">Sitemap</a></li>
                     </ul>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <form class="email-signup">
-                        <input type="email" placeholder="Your Email">
-                        <button type="submit">Sign Up</button>
-                    </form>
                 </div>
             </div>
         </div>
