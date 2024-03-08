@@ -6,6 +6,8 @@
     <title>Bootstrap Website</title>
     <!-- Link Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <!-- Custom CSS -->
     <style>
         /* Common styles */
@@ -59,8 +61,26 @@
             width: 100%;
             bottom: 0;
         }
-        body {
-            margin-bottom: 60px; /* Adjust margin to accommodate footer */
+        .footer ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 0;
+        }
+        .footer ul li {
+            margin-right: 10px;
+        }
+        .footer ul li:last-child {
+            margin-right: 0;
+        }
+        .footer ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 24px;
+        }
+        .footer ul li a:hover {
+            color: #ffc107; /* Yellow color on hover */
         }
     </style>
 </head>
@@ -118,6 +138,16 @@
                     </ul>
                 </div>
                 <!-- Add more columns as needed -->
+            </div>
+            <!-- Social media icons -->
+            <div class="row mt-3">
+                <div class="col-md-12">
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
