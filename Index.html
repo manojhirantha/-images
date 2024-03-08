@@ -229,38 +229,54 @@
     </div>
 
     <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <form class="email-signup">
-                        <input type="email" placeholder="Your Email">
-                        <button type="submit">Sign Up</button>
-                    </form>
-                </div>
-                <div class="col-md-6 text-right">
-                    <ul>
-                        <li><a href="#">Copyright Notice</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Sitemap</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <!-- Social media icons -->
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-pinterest"></i></a>
-                        <a href="#"><i class="fab fa-tiktok"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    footer {
+      background-color: #000; /* Black background */
+      padding: 5px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      color: #fff; /* White text */
+  }
+  footer .footer-logo {
+      max-width: 100px; /* Adjust as needed */
+  }
+  footer .social-icons {
+      text-align: right; /* Align social icons to the right */
+  }
+  footer .social-icons a {
+      color: #fff; /* White color for social icons */
+      font-size: 20px;
+      margin-right: 10px;
+      transition: transform 0.2s; /* Smooth transition */
+  }
+  footer .social-icons a:hover {
+      transform: scale(1.1); /* Enlarge on hover */
+  }
+  footer .email-signup {
+      text-align: center; /* Center align email sign-up form */
+      margin-top: 10px; /* Add some margin */
+  }
+  footer .email-signup input[type="email"] {
+      width: 200px;
+      padding: 8px;
+      margin-right: 10px;
+  }
+  footer .email-signup button {
+      padding: 8px 20px;
+      background-color: #000; /* Black button background */
+      color: #fff; /* White text */
+      border: none;
+      cursor: pointer;
+  }
+  footer ul {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 0;
+  }
+  footer ul li {
+      display: inline-block;
+      margin-right: 20px;
+  }
 
     <!-- Link Bootstrap JS (at the end of the body) -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
